@@ -1,7 +1,7 @@
 {
  "name": "@sabaki-js/security-incidents",
  "domain": "security_incidents",
- "version": "0.1.0",
+ "version": "1.0.0",
  "questions": [
   "credential_compromise",
   "disposition",
