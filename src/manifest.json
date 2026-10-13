@@ -3,7 +3,11 @@
  "domain": "security_incidents",
  "version": "0.1.0",
  "questions": [
-  "category"
+  "credential_compromise",
+  "disposition",
+  "severity",
+  "true_positive",
+  "urgency"
  ],
  "keywords": [
   "false",
@@ -26,5 +30,6 @@
   "window",
   "active",
   "deploy"
- ]
+ ],
+ "primary": "disposition"
 }
