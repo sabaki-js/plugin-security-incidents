@@ -1,0 +1,30 @@
+{
+ "name": "@sabaki-js/security-incidents",
+ "domain": "security_incidents",
+ "version": "0.1.0",
+ "questions": [
+  "category"
+ ],
+ "keywords": [
+  "false",
+  "source",
+  "true",
+  "allowlist",
+  "principal",
+  "logins",
+  "credential",
+  "rotation",
+  "asset",
+  "distinct",
+  "alerts",
+  "privileges",
+  "alert",
+  "criticality",
+  "countries",
+  "enrolled",
+  "account",
+  "window",
+  "active",
+  "deploy"
+ ]
+}
