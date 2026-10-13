@@ -1,43 +1,27 @@
+<img src="https://raw.githubusercontent.com/sabaki-js/sabaki/main/assets/logo.svg" width="120" alt="sabaki logo" />
+
 # @sabaki-js/security-incidents
 
-Typed decisions over security incidents (triage, severity, disposition).
+[![npm](https://img.shields.io/npm/v/%40sabaki-js%2Fsecurity-incidents)](https://www.npmjs.com/package/%40sabaki-js%2Fsecurity-incidents) [![license](https://img.shields.io/npm/l/%40sabaki-js%2Fsecurity-incidents)](https://github.com/sabaki-js/plugin-security-incidents#readme) [![CI](https://github.com/sabaki-js/plugin-security-incidents/actions/workflows/test-battery.yml/badge.svg)](https://github.com/sabaki-js/plugin-security-incidents/actions)
 
-A [sabaki](https://github.com/sabaki-js/sabaki) plugin. Router keywords included:
-register it and `Sabaki.decide()` routes matching states here automatically.
+Security incident triage.
 
-## Install
-
-```sh
-npm install @sabaki-js/security-incidents sabaki
-```
-
-Zero runtime dependencies (bundled TF-IDF weights, 476 Ko).
+Questions: `true_positive` (0.77), `disposition` (0.73), `credential_compromise` (0.73), `severity` (0.63), `urgency` (0.57). Weights: 476 KB.
 
 ## Usage
 
 ```ts
 import { Sabaki } from "sabaki";
-import mail from "@sabaki-js/security-incidents";
+import plugin from "@sabaki-js/security-incidents";
 
-const sabaki = new Sabaki();
-sabaki.register(mail.default ?? mail);
-const r = sabaki.decide({ state: "Votre facture mobile est disponible", question: "disposition" });
+const sabaki = new Sabaki().register(plugin.default ?? plugin);
+const r = sabaki.decide({ state: "..." });
 // { domain: "security_incidents", decision: ..., confidence: ..., plugin: "@sabaki-js/security-incidents" }
 ```
 
-Ask another question with `input.question` (any of the list below).
+Ask another question with `input.question`.
 
-
-## Questions (measured on held-out test sets)
-
-- `true_positive` — accuracy **0.770** (true/false)
-- `disposition` — accuracy **0.730** (classes)
-- `credential_compromise` — accuracy **0.730** (true/false)
-- `severity` — accuracy **0.630** (levels)
-- `urgency` — accuracy **0.570** (levels)
-
-Accuracies are honest test-split numbers, not marketing. See `sabaki` for the
-`nano` / `mini` modes and the benchmark methodology.
+Part of [sabaki](https://github.com/sabaki-js/sabaki) — see the [GUIDE](https://github.com/sabaki-js/sabaki/blob/main/GUIDE.md).
 
 ## License
 
