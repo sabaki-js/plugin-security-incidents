@@ -1,35 +1,35 @@
 {
- "name": "@sabaki-js/security-incidents",
- "domain": "security_incidents",
- "version": "0.1.0",
- "questions": [
-  "credential_compromise",
-  "disposition",
-  "severity",
-  "true_positive",
-  "urgency"
- ],
- "keywords": [
-  "false",
-  "source",
-  "true",
-  "allowlist",
-  "principal",
-  "logins",
-  "credential",
-  "rotation",
-  "asset",
-  "distinct",
-  "alerts",
-  "privileges",
-  "alert",
-  "criticality",
-  "countries",
-  "enrolled",
-  "account",
-  "window",
-  "active",
-  "deploy"
- ],
- "primary": "disposition"
+	"name": "@sabaki-js/security-incidents",
+	"domain": "security_incidents",
+	"version": "0.1.0",
+	"questions": [
+		"credential_compromise",
+		"disposition",
+		"severity",
+		"true_positive",
+		"urgency"
+	],
+	"keywords": [
+		"false",
+		"source",
+		"true",
+		"allowlist",
+		"principal",
+		"logins",
+		"credential",
+		"rotation",
+		"asset",
+		"distinct",
+		"alerts",
+		"privileges",
+		"alert",
+		"criticality",
+		"countries",
+		"enrolled",
+		"account",
+		"window",
+		"active",
+		"deploy"
+	],
+	"primary": "disposition"
 }
