@@ -1,5 +1,5 @@
 /**
- * @sabaki-js/security-incidents — sabaki plugin for the `security_incidents` domain.
+ * @sabaki-js/security-incidents - sabaki plugin for the `security_incidents` domain.
  *
  * Bundled `nano` mode (TF-IDF weights, <1 ms, zero dependencies).
  * Ask another question with `input.question` (see `manifest.questions`).
