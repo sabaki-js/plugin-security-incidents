@@ -2,7 +2,7 @@
   "name": "@sabaki-js/security-incidents",
   "version": "1.0.1",
   "license": "MIT",
-  "description": "Sabaki plugin — decisions typées pour le domaine security_incidents.",
+  "description": "Sabaki plugin - decisions typées pour le domaine security_incidents.",
   "repository": {
     "type": "git",
     "url": "https://github.com/sabaki-js/plugin-security-incidents"
