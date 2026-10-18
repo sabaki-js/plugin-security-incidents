@@ -1,0 +1,1 @@
+{"questions": ["credential_compromise", "disposition", "severity", "true_positive", "urgency"], "classes": {"credential_compromise": ["false", "true"], "disposition": ["close_benign", "contain", "investigate", "monitor"], "severity": ["0", "1", "2", "3", "4"], "true_positive": ["false", "true"], "urgency": ["0", "1", "2", "3"]}}
